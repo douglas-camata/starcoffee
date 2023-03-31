@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300,700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -55,4 +55,83 @@ a{
     padding: 5px 10px;
 }
 
+/* Estilizando o conteúdo da página */
+main {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+main > img {
+    width: 100%;
+}
+.card1 {
+    background-color: #b1ffdf;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.card1 > p {
+    margin-bottom: 20px;
+    font-size: 15px;
+}
 
+.card-com-imagem {
+    display: flex;
+    margin-bottom: 20px;
+}
+.card-com-imagem > img {
+    width: 50%;
+}
+.card-com-imagem > div {
+    background-color: #b1ffdf;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.card-com-imagem > div > h2 {
+    margin-bottom: 20px;
+}
+.card-com-imagem > div > p {
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 300;
+}
+
+
+
+/* Criando responsividade, quando a tela for menor que 600px alterar as formas de
+exibir as informações do header e dos cards  */
+@media (max-width:600px) {
+    header {
+        flex-direction: column;
+    }
+    .card-com-imagem {
+        flex-direction: column;       
+    }
+    .card-com-imagem > img {
+        width: 100%;
+    }
+    .card-com-imagem > div {
+        width: 100%;
+    }
+}
+
+footer {
+    box-shadow: 0 3px 10px black;
+}
+.menus-rodape {
+    display: flex;
+    justify-content: center;
+}
+.icones {
+    display: flex;
+    justify-content: center;
+}
+.icones > img {
+    margin: 5px;
+    margin-top: 20px;
+}
