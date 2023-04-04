@@ -5,12 +5,20 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+/* Criando variáveis no CSS para ser utilizada e fácil manutenção */
+:root {
+    --preto: rgb(63, 63, 63);
+    --branco: white;
+    --verde: rgb(221, 250, 221);
+    --cinza-claro: lightgrey;
+    --cinza-escuro: gray;
+}
 /* ESTILIZANDO HEADER - CABEÇALHO */
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px var(--preto);
     padding: 15px;
 }
 .logo-menu {
@@ -37,20 +45,20 @@ a{
     font-size: 10px;
 }
 .botao-branco {
-    border: 1px solid black;
+    border: 1px solid var(--preto);
     border-radius: 20px;
     padding: 5px 10px;
     margin-left: 10px;
     margin-right: 10px;
 }
 .botao-branco:hover{
-    background-color: lightgrey;
+    background-color: var(--cinza-claro);
     transition: 0.5s;
-    box-shadow: 2px 2px 2px gray;
+    box-shadow: 2px 2px 2px var(--cinza-escuro);
 }
 .botao-preto {
-    background-color: black;
-    color: white;
+    background-color: var(--preto);
+    color: var(--branco);
     border-radius: 20px;
     padding: 5px 10px;
 }
@@ -64,7 +72,7 @@ main > img {
     width: 100%;
 }
 .card1 {
-    background-color: #b1ffdf;
+    background-color: var(--verde);
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 20px;
@@ -83,7 +91,7 @@ main > img {
     width: 50%;
 }
 .card-com-imagem > div {
-    background-color: #b1ffdf;
+    background-color: var(--verde);
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -121,7 +129,7 @@ exibir as informações do header e dos cards  */
 }
 
 footer {
-    box-shadow: 0 3px 10px black;
+    box-shadow: 0 3px 10px var(--preto);
 }
 .menus-rodape {
     display: flex;
@@ -134,4 +142,4 @@ footer {
 .icones > img {
     margin: 5px;
     margin-top: 20px;
-}
+} 
